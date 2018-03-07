@@ -26,7 +26,6 @@ app.get('/place', (req, res) => {
           res.send(details.result);
         })
         .catch(err => {
-          console.log(err);
           res.status(STATUS_USER_ERROR);
           res.send({ err: err} );
         });
